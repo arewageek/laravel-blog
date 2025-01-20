@@ -14,8 +14,12 @@ class UserSeeder extends Seeder
     {
         // $this->call([]);
 
-        if(!User::count() < 10){
+        if(!User::count()){
             User::factory(10)->create();
+        }
+
+        else{
+            die("Error ::: Cannot seed a populated table ");
         }
     }
 }
