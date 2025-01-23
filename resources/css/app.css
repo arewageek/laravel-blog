@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@layer utilities {
+    .hero-section-heading span {
+        @apply text-red-600;
+    }
+}
+
+.featured-post-image {
+    background-image: url("https://i.pinimg.com/1200x/5e/05/43/5e05435115b807d7ae9a83edbb7532db.jpg");
+    background-position: bottom;
+}
